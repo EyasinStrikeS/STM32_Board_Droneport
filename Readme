@@ -1,0 +1,29 @@
+# Droneport STM32 Hardware Design
+
+## Overview
+
+This project contains the complete schematic and PCB layout for a custom embedded system designed to serve as a **Droneport Communication Controller**. The board integrates multiple interfaces for embedded control and communication:
+
+- STM32H730VBH6 microcontroller
+- Ethernet (LAN8720A + RJ45 with magnetics)
+- LTE + GNSS module (SIM7080G + NEO-M8N)
+- USB, UART, SPI, I2C, SWD, SIM card
+- Power regulation (AMS1117-3.3)
+- Antenna inputs for GNSS and LTE
+- Debug and programming header
+
+---
+
+## Features
+
+- **Core MCU**: STM32H730VBH6 (Cortex-M7, 550 MHz)
+- **Communication**:
+  - Ethernet via LAN8720A
+  - LTE Cat-M/NB-IoT + GNSS via SIM7080G
+  - GPS/GNSS via u-blox NEO-M8N
+- **Power**: USB 5V input, regulated 3.3V for logic
+- **Interfaces**: UARTs, I2C, SPI, SWD debug
+- **Antenna**: U.FL for GNSS, LTE RF antenna
+- **Connector**: RJ45, USB Micro-B, SIM slot
+
+---
